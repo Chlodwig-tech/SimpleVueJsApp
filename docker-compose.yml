@@ -1,0 +1,14 @@
+services:
+  frontend:
+    container_name: frontend_vue
+    build:
+      context: ./frontend
+    ports:
+      - "5173:5173"
+
+  backend:
+    container_name: backend_flask
+    build:
+      context: ./backend
+    ports:
+      - "5000:5000"
