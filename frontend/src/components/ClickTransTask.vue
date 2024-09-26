@@ -35,7 +35,6 @@ export default {
     methods: {
         async handleSubmit() {
             const apiurl = `${this.api_url}/api/clicktransform/`;
-            alert(apiurl);
             try {
                 const response = await fetch(apiurl);
                 if (response.ok) {
